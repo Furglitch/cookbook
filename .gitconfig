@@ -1,0 +1,4 @@
+[filter "redact-spoonacular"]
+	clean = sh git-filters/clean-spoonacular
+	smudge = sh git-filters/smudge-spoonacular
+	required = true

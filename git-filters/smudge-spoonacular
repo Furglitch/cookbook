@@ -1,0 +1,7 @@
+#!/bin/sh
+# Smudge filter: replace placeholder with the local SPOONACULAR_API_KEY (if set)
+if [ -n "$SPOONACULAR_API_KEY" ]; then
+  sed -E "s/(\"SPOONACULAR_API_KEY\"[[:space:]]*:[[:space:]]*)\"<REDACTED>\"/\\1\"$SPOONACULAR_API_KEY\"/g"
+else
+  cat
+fi
