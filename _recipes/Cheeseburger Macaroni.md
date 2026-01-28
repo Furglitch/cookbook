@@ -1,7 +1,7 @@
 ---
 sourceUrl: https://www.thecountrycook.net/crock-pot-cheeseburger-macaroni/
 spoonacularSourceUrl: 
-date: 2026-01-28
+date: 2026-01-27
 cooking_time: 355
 servings: 8
 tags: [dinner, slow-cooker]
