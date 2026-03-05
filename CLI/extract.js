@@ -35,7 +35,8 @@ async function extract(recipeUrl) {
   // Extract JSON
   const recipeJson = await response.json()
   const safeTitle = sanitize(recipeJson.title)
-  // Save JSON for debugging purposes
+  // Ensure tmp directory exists, then save JSON for debugging purposes
+  await fs.promises.mkdir('tmp', { recursive: true })
   await fs.promises.writeFile(`tmp/${safeTitle}.json`, JSON.stringify(recipeJson, null, 2))
 
   // Save the recipe Image
